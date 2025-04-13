@@ -2,7 +2,7 @@
 # PACO Mobile Platform - Simulation in CoppeliaSim
 Ce projet repose sur un robot mobile à roues Mecanum, équipé d'une plateforme élévatrice. Deux versions sont disponibles :
 
-### Auteur：Siyi LIn, Xudong YANG, Yujia ZHANG, Ruying JI
+### Auteur：Siyi LIN, Xudong YANG, Yujia ZHANG, Ruying JI
 
 ### 1. Version manuelle avec interface utilisateur (Version2.ttt)
 Contrôle par boutons via une interface graphique.
