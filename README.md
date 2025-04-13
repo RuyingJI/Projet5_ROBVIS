@@ -9,14 +9,17 @@ Contrôle par boutons via une interface graphique.
 
 
 ### 2. Version autonome (Version_Complete.ttt)
-Exécution automatique d’un scénario dès le démarrage de la simulation. Convient aux tests PID, navigation autonome, démonstration sans intervention.
+Cette version exécute automatiquement une séquence d’actions dès le lancement de la simulation, sans intervention de l'utilisateur. Elle est conçue pour tester le déplacement, le contrôle proportionnel (P) et le mouvement de la plateforme élévatrice.
 
-#### Fonctions disponibles :
-1. Avancer tout droit
-2. Se déplacer latéralement vers la droite 
-3. Rotation horaire sur place de 90°
-4. Vitesse personnalisée appliquée à chaque roue (mouvement différentiel)
-5. Montée de la plateforme élévatrice
+#### Séquence automatique :
+1. Avancer de **1 mètre en ligne droite** (avec régulation proportionnelle)
+2. **Se déplacer latéralement vers la gauche sur 1 mètre**
+3. **Rotation horaire sur place de 90°** (avec intégration angulaire)
+4. **Mouvement holonomique** : vx = 0.8, vy = 0.8, omega = 0.5 pendant 20 secondes
+5. **Élévation de la plateforme à 0,15 mètre** (avec contrôle proportionnel de vitesse)
+6. Arrêt complet du robot
+
+Chaque phase inclut une vérification de la stabilité (position/angle/vitesse) avant d’enchaîner sur la suivante.
 
 
 ## Instructions d’utilisation
